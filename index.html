@@ -65,6 +65,34 @@
     <p>
         Decision making
     </p>
+    <hr>
+    <h3>Contact us for information about the system</h3>
+    <form action="process.php" method="POST">
+        <label>First Name</label>
+        <input type="text" name="first-name">
+        <label>Last Name</label>
+        <input type="text" name="last-name">
+    </form>
+    <form action="process.php" method="POST">
+        <label>E-Mail</label>
+        <input type="text" name="email">
+    </form>
+    <label>Contact Area</label>
+    <select name="contact-area">
+        <option value="buenos-aires">Buenos Aires</option>
+        <option value="santa-fe">Santa Fe</option>
+        <option value="cordoba">Cordoba</option>   
+    </select>
+    <form action="process.php" method="POST">
+        <label>Age</label>
+        <input type="number" name="age">
+    </form>
+    <form action="process.php" method="POST">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+    </form>
+    <input type="submit" name="submit" value="Send Message"> 
+    <input type="submit" name="submit" value="Clear info.">
     
 </body>
 </html>
