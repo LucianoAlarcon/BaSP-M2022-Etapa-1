@@ -9,7 +9,7 @@
 <body>
     <section>
         <header>
-            Trackgenix SA - Home - <a href="">Sign Up</a> - <a href="">Log In</a> - <a href="">Contact</a>
+            Trackgenix SA - Home - <a href="">Sign Up</a> - <a href="">Log In</a> - <a href="#contact">Contact</a>
         </header>
         <h1>
             We are Trackgenix SA
@@ -84,65 +84,67 @@
         </div>   
     </section>
     <section>
-        <img src="img/triangulo.png"> 
+        <img src="img/productivity.png"> 
         <p>
-            Productivity Booster
+            <strong>Productivity Booster</strong>
         </p>
-        <img src="img/triangulo.png"> 
+        <img src="img/m&l.jpg"> 
         <p>
-            Ladership and team managment
+            <strong>Ladership and team managment</strong>
         </p>
-        <img src="img/triangulo.png"> 
+        <img src="img/traceability.png"> 
         <p>
-            Work Traceability
+            <strong>Work Traceability</strong>
         </p>
-        <img src="img/triangulo.png"> 
+        <img src="img/decision.jpg"> 
         <p>
-            Decision making
+            <strong>Decision making</strong>
         </p>
     </section>
     <section>
-        <h3>
-            Contact us for information about the system
-        </h3>
-        <div>
-            <form action="process.php" method="POST">
-                <label>First Name</label>
-                <input type="text" name="first-name">
-                <label>Last Name</label>
-                <input type="text" name="last-name">
-            </form>
-        </div>
-        <div>
-            <form action="process.php" method="POST">
-                <label>E-Mail</label>
-                <input type="text" name="email">
-            </form>
-        </div>
-        <div>
-            <label>Contact Area</label>
-            <select name="contact-area">
-                <option value="buenos-aires">Buenos Aires</option>
-                <option value="santa-fe">Santa Fe</option>
-                <option value="cordoba">Cordoba</option>   
-            </select>
-        </div>
-        <div>
-            <form action="process.php" method="POST">
-                <label>Age</label>
-                <input type="number" name="age">
-            </form>
-        </div>
-        <div>
-            <form action="process.php" method="POST">
-                <label>Message</label>
-                <textarea name="message"></textarea>
-            </form>
-        </div>
-        <div>
-            <input type="submit" name="submit" value="Send Message"> 
-            <input type="submit" name="submit" value="Clear info.">
-        </div> 
+        <fieldset id="contact">
+            <h3>
+                Contact us for information about the system
+            </h3>
+            <div>
+                <form action="process.php" method="POST">
+                    <label>First Name</label>
+                    <input type="text" name="first-name">
+                    <label>Last Name</label>
+                    <input type="text" name="last-name">
+                </form>
+            </div>
+            <div>
+                <form action="process.php" method="POST">
+                    <label>E-Mail</label>
+                    <input type="text" name="email">
+                </form>
+            </div>
+            <div>
+                <label>Contact Area</label>
+                <select name="contact-area">
+                    <option value="buenos-aires">Buenos Aires</option>
+                    <option value="santa-fe">Santa Fe</option>
+                    <option value="cordoba">Cordoba</option>   
+                </select>
+            </div>
+            <div>
+                <form action="process.php" method="POST">
+                    <label>Age</label>
+                    <input type="number" name="age">
+                </form>
+            </div>
+            <div>
+                <form action="process.php" method="POST">
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+                </form>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Send Message"> 
+                <input type="submit" name="submit" value="Clear info.">
+            </div> 
+        </fieldset> 
     </section>
     <section>
         <div>
