@@ -39,13 +39,9 @@ body{
 
 .nav{
     position: fixed;
-    margin-left: 0;
-    padding: 0;
     background-color:#373867;
     width: 130px;
     height: 100%;
-    margin-top: 0;
-    overflow: hidden;
 }
 
 #list{
@@ -66,19 +62,18 @@ body{
 .margin{
     margin-left: 140px;
 }
-.h1{
+.home{
     padding-left: 50px;
     width: 500px;
     display: inline-block;
     position: relative;
     bottom: 100px;
 }
-.h1 h1{
+.home h1{
     color: #373867;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     padding-top: 5px;
-    margin-top: 0;
 }
 #subtittle{
     position: relative;
@@ -97,9 +92,31 @@ body{
     color: #373867;
 }
 
-.img-h1{
+.img-home{
     display: inline-block;
     margin-left: 200px;
     margin-top: 40px;
     height: 10px;
+}
+
+.hour{
+    width: 400px;
+    height: 200px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    background-color: #BFC2C0;
+    border-radius: 15px;
+    display: inline-block;
+}
+.hour h3{
+    text-align: center;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #46A37C;
+}
+.hour p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #373867;
 }
