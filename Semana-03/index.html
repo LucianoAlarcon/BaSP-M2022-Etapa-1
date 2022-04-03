@@ -6,12 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Trackgenix S.A.</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
   <body>
     <section>
       <div class="header" id="home">
         <header>
-          <p id="tittle">Trackgenix SA</p>
+          <p id="title">Trackgenix SA</p>
         </header>
       </div>
       <div class="header-logo">
@@ -125,25 +126,25 @@
         </p>  
       </div> 
     </section>
-    <section>
+    <section class="form-contact">
       <h3 id="contact">
         Contact us for information about the system
       </h3>
       <div>
         <form action="process.php" method="POST">
           <label>First Name</label>
-          <input type="text" name="first-name" placeholder="Carlos">
+          <input type="text" name="first-name" placeholder="Carlos" id="f-name">
           <label>Last Name</label>
-          <input type="text" name="last-name" placeholder="Rodriguez">
+          <input type="text" name="last-name" placeholder="Rodriguez" id="l-name">
         </form>
       </div>
-      <div>
+      <div class="form-group">
         <form action="process.php" method="POST">
           <label>E-Mail</label>
           <input type="text" name="email" placeholder="example@gmail.com">
         </form>
       </div>
-      <div>
+      <div class="form-group">
         <label>Contact Area</label>
         <select name="contact-area">
           <option value="buenos-aires">Buenos Aires</option>
@@ -151,21 +152,21 @@
           <option value="cordoba">Cordoba</option>   
         </select>
       </div>
-      <div>
+      <div class="form-group">
         <form action="process.php" method="POST">
           <label>Age</label>
           <input type="number" name="age" placeholder="30">
         </form>
       </div>
-      <div>
+      <div class="form-group">
         <form action="process.php" method="POST">
           <label>Message</label>
           <textarea name="message" placeholder="This is a message"></textarea>
         </form>
       </div>
       <div>
-        <input type="submit" name="submit" value="Send Message"> 
-        <input type="submit" name="submit" value="Clear info.">
+        <input type="submit" name="submit" value="Send Message" id="submit"> 
+        <input type="submit" name="submit" value="Clear info." id="clear">
       </div> 
     </section>
     <section>

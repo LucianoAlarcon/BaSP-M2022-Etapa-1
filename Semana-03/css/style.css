@@ -5,44 +5,44 @@ body{
     width: 1224px;
     height: 80px;
     background-color: #46A37C;
-    margin: 0;
-    overflow: hidden;
     margin-left: 125px;
     position: absolute;
-
 }
-#tittle{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#title{
+    font-family: "Roboto", sans-serif;
     color: #373867;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-left: 50px;
+    padding-top: 5px;
     font-weight: bold;
+    font-size: 20px;
 }
 .header-logo{
-    position: relative;
+    position: fixed;;
     margin: 0;
     padding: 0;
     width: 130px;
     height: 80px;
     overflow: hidden;
-    background-color: #AACE9B;
+    background-color: #C4C4C4;
     display: block;
 }
 #r-logo{
-    padding-left: 15px;
-    width: 100px;
-    height: 80px;
+    padding-left: 28px;
+    padding-top: 6px;
+    width: 70px;
+    height: 70px;
 }
 .nav{
     position: fixed;
     background-color:#373867;
     width: 130px;
     height: 100%;
+    margin-top: 80px;
 }
 #list{
     list-style: none;
     padding-left: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
 
 }
 #list li{
@@ -65,24 +65,23 @@ body{
     bottom: 100px;
 }
 .home h1{
+    position: relative;
     color: #373867;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 35px;
-    padding-top: 5px;
+    top: 20px;
 }
 #subtittle{
     position: relative;
-    color: #B4AFAF;
-    padding-top: 0;
-    margin-top: 0;  
+    color: #B4AFAF;  
     display: inline;
-    bottom: 15px;
+    bottom: 10px;
 
 }
 #first-p{
     display: inline-block;
     text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #373867;
 }
 .img-home{
@@ -104,15 +103,17 @@ body{
 .box h3{
     text-align: center;
     padding-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #46A37C;
     text-shadow: 3px 3px 10px grey;
     text-decoration: underline black;
 }
 .box p {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #373867;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .caract{
     margin-left: 170px;
@@ -124,8 +125,10 @@ body{
 }
 .caract h3{
     text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
+    color: #373867;
+    text-decoration: underline wavy;
 }
 .caract img{
     width: 250px;
@@ -133,12 +136,90 @@ body{
 }
 .caract p{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: italic;
     font-size: 12px;
 }
-
-
+.form-contact{
+    font-family: "Roboto", sans-serif;
+    margin-left: 50px;
+    margin-top: 100px;
+    color: #373867;
+}
+.form-group{
+    padding-bottom: 15px;
+}
+.form-contact label{
+    display: block;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    color: #373867;
+    display: inline-block;
+}
+.form-contact input[type="text"]{
+    padding: 10px;
+    width: 1100px;
+    border: #373867 solid;
+    border-radius: 10px;
+}
+#f-name{
+    width: 400px;
+    margin-right: 60px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#l-name{
+    width: 400px;
+    margin-left: 16px;
+    display: inline-block;
+}
+.form-contact input[type="number"]{
+    padding: 8px;
+    width: 1100px;
+    border: #373867 solid;
+    border-radius: 10px;
+}
+.form-contact select{
+    padding: 10px;
+    width: 1125px;
+    border: #373867 solid;
+    border-radius: 10px;
+}
+.form-contact textarea{
+    padding: 8px;
+    width: 1100px;
+    border: #373867 solid;
+    border-radius: 10px;
+}
+.form-contact input[type="submit"]{
+    padding: 10px 15px;
+}
+#submit{
+    margin-right: 10px;
+    background-color: #AACE9B;
+    border: black solid 1px;
+    border-radius: 5px;
+    color: #373867;
+    margin-left: 3px;
+}
+#clear{
+    margin-right: 10px;
+    background-color: #fff;
+    border: solid black 1px;
+    border-radius: 5px;
+    color: #373867;
+    margin-left: 3px;
+}
+#submit:hover{
+    background-color: #335823;
+    color: #fff;
+}
+#clear:hover{
+    background-color: #335823;
+    color: #fff;
+}
 
 
 
