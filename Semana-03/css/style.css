@@ -1,18 +1,21 @@
 body{
     margin: 0;
 }
+.margin{
+    margin-left: 140px;
+}
 .header{
-    width: 1224px;
+    width: 90.4%;
     height: 80px;
     background-color: #46A37C;
-    margin-left: 125px;
+    margin-left: 130px;
     position: absolute;
 }
 #title{
     font-family: "Roboto", sans-serif;
     color: #373867;
     padding-left: 50px;
-    padding-top: 5px;
+    padding-top: 25px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -38,6 +41,7 @@ body{
 #list{
     list-style: none;
     padding-left: 30px;
+    padding-top: 50px;
     font-family: "Roboto", sans-serif;
 
 }
@@ -52,51 +56,50 @@ body{
 #list a:hover{
     color: red;
 }
-.margin{
-    margin-left: 140px;
-}
 .home{
-    padding-left: 50px;
+    padding-left: 70px;
     width: 500px;
     display: inline-block;
-    position: relative;
-    bottom: 100px;
-    padding-top: 20px;
 }
 .home h1{
     position: relative;
     color: #373867;
     font-family: "Roboto", sans-serif;
     font-size: 35px;
-    top: 10px;
-}
-#img-h1{
-    margin-top: 50px;
+    font-weight: bold;
+    text-shadow: 8px 8px 10px;
+    bottom: 220px;
+    left: 50px;
 }
 #subtittle{
-    position: relative;
     color: #B4AFAF;  
-    display: inline;
-    bottom: 10px;
-
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    font-weight: bold;
+    bottom: 200px;
+    left: 50px;
 }
 #first-p{
-    display: inline-block;
+    position: relative;
     text-align: justify;
     font-family: "Roboto", sans-serif;
     color: #373867;
+    bottom: 150px;
+    left: 50px;
 }
 .img-home{
     display: inline-block;
     margin-left: 200px;
-    margin-top: 40px;
+}
+#img-h1{
+    margin-top: 100px;
 }
 .box{
     width: 400px;
     height: 200px;
     margin-left: 130px;
     margin-bottom: 30px;
-    margin-top: 100px;
+    margin-top: 30px;
     background-color: #BFC2C0;
     border-radius: 15px;
     display: inline-block;
@@ -109,6 +112,8 @@ body{
     color: #46A37C;
     text-shadow: 3px 3px 10px grey;
     text-decoration: underline black;
+    font-weight: bold;
+    font-size: 20px;
 }
 .box p {
     text-align: center;
@@ -116,10 +121,12 @@ body{
     color: #373867;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 40px;
+    font-size: 16px;
 }
 .caract{
     margin-left: 170px;
-    margin-top: 100px;
+    margin-top: 30px;
     display: inline-block;
     width: 290px;
     height: 290px;
@@ -136,23 +143,35 @@ body{
     color: #373867;
     text-decoration: underline wavy;
     padding-top: 40px;
+    font-size: 19px;
+    font-weight: bold;
 }
 .caract img{
     width: 200px;
+    height: 100px;
     padding-left: 50px;
-    padding-top: 5px;
+    padding-top: 35px;
 }
 .caract p{
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-style: italic;
-    font-size: 10px;
+    font-weight: bold;
+    font-size: 8px;
+    padding-top: 5px;
 }
 .form-contact{
     font-family: "Roboto", sans-serif;
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
     color: #373867;
+}
+.form-contact h3{
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 3px 3px 10px;
 }
 .form-group{
     padding-bottom: 15px;
@@ -223,12 +242,22 @@ body{
     box-shadow: 3px 3px 10px;
 }
 #submit:hover{
-    background-color: #335823;
+    background-color: #37781c;
     color: #fff;
+    transition-duration: 0,4s;
+}
+#submit:active{
+    background-color: #265213;
+    transform: translateY(4px);
 }
 #clear:hover{
-    background-color: #335823;
+    background-color: #992121;
     color: #fff;
+    transition-duration: 0,4s;
+}
+#clear:active{
+    background-color: #711919;
+    transform: translateY(4px);
 }
 .wwa{
     width: 700px;
@@ -245,9 +274,12 @@ body{
     padding-top: 15px;
     padding-left: 15px;
     text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
 }
 .wwa p {
     padding-bottom: 15px;
+    padding-top: 15px;
     padding-left: 15px;
 }
 .lists{
@@ -256,18 +288,29 @@ body{
     margin-left: 50px;
     margin-right: 40px;
     font-family: "Roboto", sans-serif;
+
+}
+.lists h2{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+.lists li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 25px;
 }
 .hr{
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 25px;
+    margin-left: 50px;
     width: 90%;
     height: 2px;
     background-color: black;
 }
 .hr-footer{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 30%;
     width: 30%;
     height: 2px;
@@ -275,7 +318,7 @@ body{
 }
 .footer{
     width: 200px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: 38%;
 }
 #logo{
@@ -284,7 +327,8 @@ body{
 }
 .copy{
     width: 500px;
-    margin-left: 30%;
-    margin-top: 45px;
+    margin-left: 33%;
     font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    padding-bottom: 20px;
 }
