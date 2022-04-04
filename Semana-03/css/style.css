@@ -4,39 +4,31 @@ body{
 .margin{
     margin-left: 140px;
 }
-.header{
-    width: 90.4%;
-    height: 80px;
-    background-color: #46A37C;
-    margin-left: 130px;
-    position: absolute;
+header{
+    background: #46A37C;
+    height: 100px;
+    width: 100%;
+}
+.r-logo {
+    position: fixed;
+    width: 10%;
+    height: 100px;
+    top: 0;
+    margin-bottom: 70px;
 }
 #title{
     font-family: "Roboto", sans-serif;
     color: #373867;
-    padding-left: 50px;
-    padding-top: 25px;
+    padding-left: 13%;
+    padding-top: 35px;
     font-weight: bold;
     font-size: 20px;
-}
-.header-logo{
-    position: fixed;
-    width: 130px;
-    height: 80px;
-    background-color: #C4C4C4;
-}
-#r-logo{
-    padding-left: 28px;
-    padding-top: 6px;
-    width: 70px;
-    height: 70px;
 }
 .nav{
     position: fixed;
     background-color:#373867;
-    width: 130px;
+    width: 10%;
     height: 100%;
-    margin-top: 80px;
 }
 #list{
     list-style: none;
@@ -321,7 +313,7 @@ body{
     margin-top: 70px;
     margin-left: 38%;
 }
-#logo{
+.logo{
     width: 30px;
     height: 30px;
 }
