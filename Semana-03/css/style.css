@@ -125,7 +125,6 @@ header{
     margin-right: 130px;
     border: solid black;
     border-radius: 100%;
-    background-color: #46A37C;
     box-shadow: 5px 5px 10px;
 }
 .caract h3{
@@ -133,16 +132,15 @@ header{
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     color: #373867;
-    text-decoration: underline wavy;
     padding-top: 40px;
     font-size: 19px;
     font-weight: bold;
 }
 .caract img{
-    width: 200px;
-    height: 100px;
-    padding-left: 50px;
-    padding-top: 35px;
+    width: 130px;
+    height: 130px;
+    padding-left: 80px;
+    padding-top: 20px;
 }
 .caract p{
     text-align: center;
@@ -292,24 +290,12 @@ header{
     margin-left: 25px;
 }
 .hr{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    width: 90%;
-    height: 2px;
-    background-color: black;
-}
-.hr-footer{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 30%;
-    width: 30%;
-    height: 2px;
-    background-color: black;
+    padding: 25px 0px 12px 0px;
+    border-bottom: 1px solid black;    
 }
 .footer{
     width: 200px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 38%;
 }
 .footer a{
