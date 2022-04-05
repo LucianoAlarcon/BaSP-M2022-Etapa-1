@@ -5,7 +5,7 @@ body{
     margin-left: 140px;
 }
 header{
-    background: #46A37C;
+    background-color: #46A37C;
     height: 100px;
     width: 100%;
 }
@@ -59,7 +59,7 @@ header{
     font-family: "Roboto", sans-serif;
     font-size: 35px;
     font-weight: bold;
-    text-shadow: 8px 8px 10px;
+    text-shadow: 3px 3px 10px;
     bottom: 220px;
     left: 50px;
 }
@@ -277,8 +277,7 @@ header{
 .lists{
     width: 25%;
     display: inline-block;
-    margin-left: 50px;
-    margin-right: 40px;
+    margin-left: 90px;
     font-family: "Roboto", sans-serif;
 
 }
@@ -312,6 +311,9 @@ header{
     width: 200px;
     margin-top: 70px;
     margin-left: 38%;
+}
+.footer a{
+    text-decoration: none;
 }
 .logo{
     width: 30px;
