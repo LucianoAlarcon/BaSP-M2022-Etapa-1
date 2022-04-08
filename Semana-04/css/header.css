@@ -1,24 +1,20 @@
-.conteiner{
+.header{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header{
-    display: flex;
+    flex: 1 1 auto;
+    height: 10%;
     background-color: #46A37C;
-    flex-grow: 1;
 }
-header img{
-    width: 25%;
-    height: 25%;
-    flex-grow: 0;
+
+.r-logo{
+    max-width: 150px;
+    display: flex;
 }
-header p{
+.header p{
     display: flex;
     align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    padding: 10px;
-    font-weight: bold;
+    padding-left: 20px;
     color: #373867;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }

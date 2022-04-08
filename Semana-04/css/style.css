@@ -1,19 +1,22 @@
 body{
     font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
 }
 .division{
     padding: 25px 0px 12px 0px;
     border-bottom: 1px solid black;  
 }
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 820px){
-    body{
-        display: flex;
-        flex-direction: column;
-    }
     .nav{
         display: none;
     }
-    
+}
+@media (max-width: 390px){
+    .container{
+        flex-direction: column;
+    }
 }
