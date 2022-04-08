@@ -1,0 +1,33 @@
+.home{
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.img-home{
+    max-width: 25%;
+    padding: 15px;
+}
+.home h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #373867;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: #B4AFAF;
+    padding: 10px;
+}
+.first-p{
+    text-align: justify;
+    padding: 20px;
+    color: #373867;
+}
+
+.box{
+    
+}

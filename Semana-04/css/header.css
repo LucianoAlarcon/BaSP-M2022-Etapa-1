@@ -1,0 +1,24 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    background-color: #46A37C;
+    flex-grow: 1;
+}
+header img{
+    width: 25%;
+    height: 25%;
+    flex-grow: 0;
+}
+header p{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+    color: #373867;
+}
