@@ -6,13 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Trackgenix S.A.</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="stylesheet" type="text/css" href="C:\Users\luchi\Desktop\BaSP-M2022-Etapa-1\BaSP-M2022-Etapa-1\Semana-04\css\style.css">
-      <link rel="stylesheet" type="text/css" href="C:\Users\luchi\Desktop\BaSP-M2022-Etapa-1\BaSP-M2022-Etapa-1\Semana-04\css\reset.css">
-      <link rel="stylesheet" type="text/css" href="C:\Users\luchi\Desktop\BaSP-M2022-Etapa-1\BaSP-M2022-Etapa-1\Semana-04\css\header.css">
-      <link rel="stylesheet" type="text/css" href="C:\Users\luchi\Desktop\BaSP-M2022-Etapa-1\BaSP-M2022-Etapa-1\Semana-04\css\footer.css">
-      <link rel="stylesheet" type="text/css" href="C:\Users\luchi\Desktop\BaSP-M2022-Etapa-1\BaSP-M2022-Etapa-1\Semana-04\css\main.css">
-      <link rel="stylesheet" type="text/css" href="C:\Users\luchi\Desktop\BaSP-M2022-Etapa-1\BaSP-M2022-Etapa-1\Semana-04\css\navbar.css">
-      
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <link rel="stylesheet" type="text/css" href="./css/reset.css">
+      <link rel="stylesheet" type="text/css" href="./css/header.css">
+      <link rel="stylesheet" type="text/css" href="./css/main.css">
+      <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+      <link rel="stylesheet" type="text/css" href="./css/form.css">
+      <link rel="stylesheet" type="text/css" href="./css/footer.css">
   </head>
   <body>
     <section class="container">
@@ -20,7 +20,7 @@
         <img class="r-logo" src="img/logo.png" alt="radium-logo">
         <p>Trackgenix SA</p>
       </header>
-      <div class="nav">
+      <!-- <div class="nav">
         <nav>
           <ul id="list">
             <li><a href="#home">Home</a></li>
@@ -29,7 +29,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </div>
+      </div> -->
     </section>
     <section class="margin">
       <section class="division container">
@@ -98,48 +98,52 @@
         </div>
       </section>
       <section class="division">
-        <div class="caract">
-          <h3>
-            &diams; Productivity Booster &diams;
-          </h3>
-          <!-- <img src="img/productivity.png" alt="productivity-image">  -->
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.</em>
-          </p>
+        <div class="container">
+          <div class="caract-top">
+            <h3>
+              &diams; Productivity Booster &diams;
+            </h3>
+            <img src="img/productivity.png" alt="productivity-image"> 
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.</em>
+            </p>
+          </div>
+          <div class="caract-top">
+            <h3>
+              &diams; L&M &diams;
+            </h3>
+            <img src="img/m&l.png" alt="ladership-team-managment"> 
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-        <div class="caract">
-          <h3>
-            &diams; Ladership and team management &diams;
-          </h3>
-          <!-- <img src="img/m&l.png" alt="ladership-team-managment">  -->
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="caract">
-          <h3>
-            &diams; Work Traceability &diams;
-          </h3>
-          <!-- <img src="img/traceability.png" alt="traceability-image">  -->
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.</em>
-          </p>
-        </div>
-        <div class="caract">
-          <h3>
-            &diams; Decision making &diams;
-          </h3>
-          <!-- <img src="img/decision.png" alt="decision-image"> -->
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.</em>
-          </p>  
-        </div> 
+        <div class="container">
+          <div class="caract-bot">
+            <h3>
+              &diams; Work Traceability &diams;
+            </h3>
+            <img src="img/traceability.png" alt="traceability-image"> 
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.</em>
+            </p>
+          </div>
+          <div class="caract-bot">
+            <h3>
+              &diams; Decision making &diams;
+            </h3>
+            <img src="img/decision.png" alt="decision-image">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.</em>
+            </p>  
+          </div> 
+        </div>  
       </section>
-      <section class="form-contact division">
-        <h3 id="contact">
+      <section class="form-contact division container">
+        <h3>
           Contact us for information about the system
         </h3>
-        <div>
+        <div class="form-group names">
           <form action="process.php" method="POST">
             <label>First Name</label>
             <input type="text" name="first-name" placeholder="Carlos" id="f-name">
@@ -179,23 +183,25 @@
         </div> 
       </section>
       <section class="division">
-        <div class="wwa">
-          <h3>
-            Who we are
-          </h3>
-          <p>
-            RR time tracker is a web platform that help to manage time work.
-          </p>
-          <p>
-            What type of application do you have in mind?
-          </p>
-          <p>
-            We're providing you with the core UI kit needed to kickstart your design and development while also
-            allowing you to add new functionalities to the existing capabilities.
-          </p>
-        </div>   
+        <div class="container">
+          <div class="wwa">
+            <h3>
+              Who we are
+            </h3>
+            <p>
+              RR time tracker is a web platform that help to manage time work.
+            </p>
+            <p>
+              What type of application do you have in mind?
+            </p>
+            <p>
+              We're providing you with the core UI kit needed to kickstart your design and development while also
+              allowing you to add new functionalities to the existing capabilities.
+            </p>
+          </div>   
+        </div>
       </section>
-      <section class="hr">
+      <section class="division container">
         <div class="lists">
           <h2>
             Products
@@ -217,7 +223,7 @@
             <li>Resources</li>
             <li>Blog</li>
           </ol>
-        </div>
+         </div>
         <div class="lists">
           <h2>
             Support
@@ -230,7 +236,7 @@
           </ul>
         </div>    
       </section>
-      <section>
+      <section class="container">
         <footer>
           <div class="footer">
             <a href="https://www.facebook.com/radiumrocket">

@@ -9,6 +9,7 @@
     max-width: 150px;
     display: flex;
 }
+
 .header p{
     display: flex;
     align-items: center;

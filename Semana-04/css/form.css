@@ -1,0 +1,21 @@
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #373867;
+}
+
+.form-contact h3{
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    color: #373867;
+    font-weight: bold;
+}
+
+.form-group{
+    margin: 10px;
+}
+
