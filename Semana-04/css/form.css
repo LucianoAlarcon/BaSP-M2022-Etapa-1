@@ -1,12 +1,13 @@
 .form-contact{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     max-width: 90%;
     padding: 20px;
+    margin-left: 10px;
     font-family: "Roboto", sans-serif;
     color: #373867;
 }
-
 .form-contact h3{
     text-align: center;
     padding: 15px;
@@ -14,8 +15,84 @@
     color: #373867;
     font-weight: bold;
 }
-
 .form-group{
+    display: flex;
+    flex-direction: column;
     margin: 10px;
 }
+.form-contact label{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.f-name{
+    padding-bottom: 15px;
+}
+
+.form-contact select{
+    width: 102%;
+    padding: 5px;
+    border:#373867 solid;
+    border-radius: 5px;
+}
+.form-contact textarea{
+    width: 100%;
+    border: #373867 solid;
+    border-radius: 5px;
+}
+.form-contact input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    border:#373867 solid;
+    border-radius: 5px;
+}
+.form-contact input[type="number"]{
+    width: 100%;
+    padding: 5px;
+    border:#373867 solid;
+    border-radius: 5px;
+}
+.form-contact input[type="submit"]{
+    padding: 10px 15px;
+}
+#submit{
+    margin-right: 10px;
+    background-color: #AACE9B;
+    border: black solid 1px;
+    border-radius: 5px;
+    color: #373867;
+    margin-left: 10px;
+    box-shadow: 3px 3px 10px;
+}
+#clear{
+    margin-right: 10px;
+    background-color: #fff;
+    border: solid black 1px;
+    border-radius: 5px;
+    color: #373867;
+    margin-left: 10px;
+    box-shadow: 3px 3px 10px;
+}
+#submit:hover{
+    background-color: #37781c;
+    color: #fff;
+    transition-duration: 0,4s;
+}
+#submit:active{
+    background-color: #265213;
+    transform: translateY(4px);
+}
+#clear:hover{
+    background-color: #992121;
+    color: #fff;
+    transition-duration: 0,4s;
+}
+#clear:active{
+    background-color: #711919;
+    transform: translateY(4px);
+}
+
+
 

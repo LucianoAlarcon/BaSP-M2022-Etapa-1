@@ -17,11 +17,16 @@
   <body>
     <section class="container">
       <header class="header">
-        <img class="r-logo" src="img/logo.png" alt="radium-logo">
+        <div class="container-logo">
+          <div class="menu-logo">
+            <img src="./img/hamburguer.png" alt="menu-icon">
+          </div>
+        </div>
         <p>Trackgenix SA</p>
       </header>
       <!-- <div class="nav">
         <nav>
+          <img class="r-logo" src="img/logo.png" alt="radium-logo">
           <ul id="list">
             <li><a href="#home">Home</a></li>
             <li><a href="#">Sign Up</a></li>
@@ -38,7 +43,7 @@
             Hi, we are Trackgenix
           </h1>
           <p class="subtitle">The best choice of your business</p> 
-          <p>
+          <p class="first-p">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dicta alias consequuntur dolor maiores nisi 
             itaque consectetur quis at, iure voluptas non reiciendis quaerat. Autem dolorem sequi commodi velit totam!
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dicta alias consequuntur dolor maiores nisi 
@@ -51,7 +56,7 @@
         </div>
         <div class="img-home">
           <a href="img/desktop.png">
-            <img id="img-h1" src="img/desktop.png" alt="sample-image">
+            <img src="img/desktop.png" alt="sample-image">
           </a>
         </div>
       </section>
@@ -143,13 +148,19 @@
         <h3>
           Contact us for information about the system
         </h3>
-        <div class="form-group names">
-          <form action="process.php" method="POST">
-            <label>First Name</label>
-            <input type="text" name="first-name" placeholder="Carlos" id="f-name">
-            <label>Last Name</label>
-            <input type="text" name="last-name" placeholder="Rodriguez" id="l-name">
-          </form>
+        <div class="form-group">
+          <div class="f-name">
+            <form action="process.php" method="POST">
+              <label>First Name</label>
+              <input type="text" name="first-name" placeholder="Carlos" id="f-name">
+            </form>
+          </div>
+          <div class="l-name">
+            <form action="process.php" method="POST">
+              <label>Last Name</label>
+              <input type="text" name="first-name" placeholder="Rodriguez" id="f-name">
+            </form>
+          </div>
         </div>
         <div class="form-group">
           <form action="process.php" method="POST">
