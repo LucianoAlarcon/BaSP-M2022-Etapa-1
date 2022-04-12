@@ -56,7 +56,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: bold;
-    color: #46A37C;  
+    color: #46A37C;
 }
 .box-bot h3{
     font-family: "Roboto", sans-serif;
@@ -72,6 +72,7 @@
 .box-bot p{
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 .caract-top{
     display: flex;
