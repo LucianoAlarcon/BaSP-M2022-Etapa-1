@@ -1,6 +1,6 @@
 # HTML Practice 
 ## BaSP - 2022
-This is a HTML practice by Luciano Alarcon.
+BaSP-M2022-Etapa-1 practice by Luciano Alarcon.
 ````
 - Week 01
 Preparation of the landing made in week 1 with Figma
@@ -11,6 +11,9 @@ Create a landing page whit HTML
 - Week 03
 Add style whit css
 
--Week 04 
+- Week 04 
 Responsive web design whit flex box
+
+- Week 05
+Practice about javaScript
 
