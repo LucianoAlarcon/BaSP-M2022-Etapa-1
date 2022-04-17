@@ -29,4 +29,4 @@ console.log("ex03-arrays-F: " + month.join(" - "));
 
 var month = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-console.log("ex03-arrays-F: " + month.slice(4, 11))
+console.log("ex03-arrays-G: " + month.slice(4, 11))

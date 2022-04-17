@@ -14,6 +14,6 @@ console.log("ex01-variables and operators-B: " + result)
 var word1, word2;
 word1= "red"
 word2= "white"
-
 var result = word1.length + word2.length;
+
 console.log("ex01-variables and operators-B: " + result)
