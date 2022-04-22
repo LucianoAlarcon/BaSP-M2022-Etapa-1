@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackgenix S.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="../style/header.css">
+    <link rel="stylesheet" type="text/css" href="../style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../style/footer.css">
+    <link rel="stylesheet" type="text/css" href="../style/reset.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/main.css">
+    <link rel="stylesheet" type="text/css" href="../style/login.css">
+    <script src="../javascript/login.js"></script>
+</head>
+  <body>
+    <section class="container">
+      <div class="nav">
+        <nav>
+          <img class="r-logo" src="../img/logo.png" alt="radium-logo">
+          <ul id="list">
+            <li><a href="../views/index.html">Home</a></li>
+            <li><a href="../views/sing-up.html">Sign Up</a></li>
+            <li><a href="../views/login.html">Log In</a></li>
+            <li><a href="../views/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <header class="header" id="home">
+        <div class="container-logo">
+          <div class="menu-logo">
+            <img src="../img/hamburguer.png" alt="menu-icon">
+          </div>
+        </div>
+        <p>Trackgenix SA</p>
+      </header>
+    </section>
+    <section class="margin">
+      <section class="container">
+        <form class="f-login" action="process.php" method="POST">
+          <h2 class="title-login">
+            Login
+          </h2>
+          <div class="login">
+            <label>Email</label>
+            <input type="text" name="first-name" placeholder="example@gmail.com">
+            <p class="error error-view">Input Error</p>
+          </div>
+          <div class="login">
+            <label>Password</label>
+            <input type="password" name="last-name" placeholder="***********">
+            <p class="error error-view">Input Error</p>
+          </div>
+          <div class="buttons">
+            <input type="button" name="submit" value="Login" id="login"> 
+          </div>
+        </form>
+      </section>
+      <section class="container">
+        <footer>
+          <div class="footer">
+            <a href="https://www.facebook.com/radiumrocket">
+              <img class="logo" src="../img/fcb.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/radium.rocket/">
+              <img class="logo" src="../img/insta.png" alt="instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/radium-rocket/">
+              <img class="logo" src="../img/in.png" alt="linkedin">
+            </a>
+            <a href="https://twitter.com/radiumrocket"> 
+              <img class="logo" src="../img/twt.jpg" alt="twitter"> 
+            </a>
+            <a href="https://github.com/radiumrocketapps">
+              <img class="logo" src="../img/git-hub.png" alt="git-hub">
+            </a>
+          </div>
+          <div class="copy">
+            <p>Copyright &copy; 2022 Trackgenix SA. All rights reserved.</p>
+          </div> 
+        </footer>
+      </section>
+    </section>
+  </body>
+</html>

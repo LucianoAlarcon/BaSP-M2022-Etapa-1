@@ -39,9 +39,9 @@ function result(num1,num2){
         }else{
             alert("One of paramether is not integer")
             if (!Number.isInteger(num1)) {
-                return Math.round(num1)
+                return Math.round(num1);
             }else{
-                return Math.round(num2)
+                return Math.round(num2);
             }
         } 
     }else{

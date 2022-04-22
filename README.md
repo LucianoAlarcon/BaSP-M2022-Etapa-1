@@ -17,3 +17,8 @@ Responsive web design whit flex box
 - Week 05
 Practice about javaScript
 
+- Week 06
+Add logic to landing and logic to sign in and login
+
+
+
