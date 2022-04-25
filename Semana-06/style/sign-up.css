@@ -1,4 +1,7 @@
-.title-login{
+.title-signup{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-family: "Roboto", sans-serif;
     text-align: center;
     padding: 15px;
@@ -6,54 +9,59 @@
     color: #373867;
     font-weight: bold;
 }
-.f-login{
+.f-signup{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 80%;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 70px;
     border: 1px solid #373867;
     border-radius: 15px;
     box-shadow: 5px 5px 10px #000;
 }
-.login{
+.sign-up{
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50px;
+    padding-left: 60px;
 }
-.login label{
+.sign-up label{
     display: flex;
     padding: 10px 0px 10px 0px;
     color: #373867;
     font-weight: bold;
 }
-.login input{
+.sign-up input{
     display: flex;
-    width: 90%;
+    width: 100%;
     padding: 5px;
+}
+.sign-up input[type="date"]{
+    margin-right: 55px;
 }
 .buttons{
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 50px;
+    align-self: center;
+    width: 100%;
 }
-#login{
+#sign-up{
+    text-align: center;
     background-color: #AACE9B;
     border: black solid 1px;
     border-radius: 5px;
     color: #373867;
-    padding: 15px;
-    width: 30%;
+    padding: 10px 30px;
     box-shadow: 3px 3px 10px;
 }
-#login:hover{
+#sign-up:hover{
     background-color: #37781c;
     color: #fff;
     transition-duration: 0,4s;
 }
-#login:active{
+#sign-up:active{
     background-color: #265213;
     transform: translateY(4px);
 }
@@ -63,7 +71,7 @@
     color: red;
     font-weight: bold;
 }
-input[type=text].input-error, input[type=password].input-error{
+input[type=text].input-error, input[type=password].input-error, input[type=number].input-error{
     border: red 1px solid;
 }
 .error-view{
