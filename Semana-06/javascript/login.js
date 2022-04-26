@@ -6,25 +6,36 @@ window.onload = function () {
     emailInput = emailTxtDiv.children[1];
     passwordInput = passwordTxtDiv.children[1];
     logButton.addEventListener('click', logClick);
-    var form = document.getElementById('form');
-    var errorTxt = document.getElementById('error');
-    
-}
+    var form = document.getElementById('form'); 
 
-
-/*function myFocus(x, i){
-   x.classList.remove('blur');
-   errorTxt[i].classList.remove('error');
-   errorTxt[i].classList.add('error-view');
-}
-
-function myBlur(x, i){
-    if (x.value == "") {
-        x.classList.add('blur');
-        errorTxt[i].classList.add('error');
-        errorTxt[i].classList.remove('error-view');
+    emailInput.onfocus = function(){
+        myFocus(emailInput, emailTxtDiv)
     }
-}*/
+    emailInput.onblur = function (){
+        myBlur(emailInput, emailTxtDiv);
+    }
+    passwordInput.onfocus = function(){
+        myFocus(passwordInput, passwordTxtDiv)
+    }
+    passwordInput.onblur = function (){
+        myBlur(passwordInput, passwordTxtDiv);
+    }
+}
+
+
+function myFocus(input, divTxtBox){
+   hError(divTxtBox);
+}
+
+function myBlur(input, divTxtBox){
+    if (input.value == "") {
+        sError(divTxtBox);
+    }else{
+        hError(divTxtBox);
+    }
+}
+
+   
 
 function logClick() {
     var email = emailInput.value;
@@ -46,6 +57,8 @@ function logClick() {
     }
 }
 
+
+
 function validateEmail(email) {
     var eRegex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
     if (!eRegex.test(email)) {
@@ -53,6 +66,7 @@ function validateEmail(email) {
     }else{
         return true; 
     }
+    
     
 }
 
@@ -84,12 +98,14 @@ function validatePassword(password) {
 
 function sError(divsTxt) {
     var divChild = divsTxt.children;
-    divChild[1].classList.add('input-error')
+    divChild[1].classList.add('error');
+    divChild[1].classList.add('input-error');
     divChild[2].classList.remove('error-view');
 }
 
 function hError(divsTxt){
     var divChild = divsTxt.children;
-    divChild[1].classList.remove('input-error')
+    divChild[1].classList.remove('error');
+    divChild[1].classList.remove('input-error');
     divChild[2].classList.add('error-view');
 }
