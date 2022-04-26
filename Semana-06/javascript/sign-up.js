@@ -144,7 +144,7 @@ function signClick() {
         allIsValid = false;
     }
     if (!validateDNI(data.dni, textBoxes[2])) {
-        alert('ERROR\n DNI is invalid')
+        alert('ERROR\nDNI is invalid')
         allIsValid = false
     }
     if (!isFullAge(data.birthDate, textBoxes[3])) {
@@ -356,7 +356,7 @@ function validateEmail(email, txtBoxes){
     }
 }
 
-function validatePassword(password) {
+function validatePassword(password, txtBoxes) {
     var numbers = ['0','1','2','3','4','5','6','7','8','9'];
     var num = 0;
     var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "l", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -376,8 +376,10 @@ function validatePassword(password) {
         }
     }
     if (password.length >= 8 && num >= 1 && char >=1 && !signs) {
+        hError(txtBoxes)
         return true;
     } else{
+        sError(txtBoxes)
         return false;
     }
 }
@@ -391,15 +393,6 @@ function validatePassword2(password, confPassword, txtBoxes){
         return false;
     }
 }
-
-
-
-
-
-
-
-
-
 
 function sError(divsTxt) {
     var divChild = divsTxt.children;
