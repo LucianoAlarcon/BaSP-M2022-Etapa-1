@@ -31,77 +31,77 @@ window.onload = function () {
     nameInput.onfocus = function(){
         myFocus(nameInput, divTxtName);
     }
-    nameInput.onblur = function () {
+    nameInput.onblur = function (){
         myBlur(nameInput, divTxtName);
     }
 
     lNameInput.onfocus = function(){
         myFocus(lNameInput, divLName);
     }
-    lNameInput.onblur = function () {
+    lNameInput.onblur = function (){
         myBlur(lNameInput, divLName);
     }
 
     dniInput.onfocus = function(){
         myFocus(dniInput, divDni);
     }
-    dniInput.onblur = function () {
+    dniInput.onblur = function (){
         myBlur(dniInput, divDni);
     }
 
     dateInput.onfocus = function(){
         myFocus(dateInput, divDate);
     }
-    dateInput.onblur = function () {
+    dateInput.onblur = function (){
         myBlur(dateInput, divDate);
     }
 
     phoneInput.onfocus = function(){
         myFocus(phoneInput, divPhone);
     }
-    phoneInput.onblur = function () {
+    phoneInput.onblur = function (){
         myBlur(phoneInput, divPhone);
     }
 
     addressInput.onfocus = function(){
         myFocus(addressInput, divAddress);
     }
-    addressInput.onblur = function () {
+    addressInput.onblur = function (){
         myBlur(addressInput, divAddress);
     }
 
     locateInput.onfocus = function(){
         myFocus(locateInput, divLocate);
     }
-    locateInput.onblur = function () {
+    locateInput.onblur = function (){
         myBlur(locateInput, divLocate);
     }
 
     codeInput.onfocus = function(){
         myFocus(codeInput, divCode);
     }
-    codeInput.onblur = function () {
+    codeInput.onblur = function (){
         myBlur(codeInput, divCode);
     }
 
     emailInput.onfocus = function(){
         myFocus(emailInput, divEmail);
     }
-    emailInput.onblur = function () {
+    emailInput.onblur = function (){
         myBlur(emailInput, divEmail);
     }
 
     passInput.onfocus = function(){
         myFocus(passInput, divPass);
     }
-    passInput.onblur = function () {
+    passInput.onblur = function(){
         myBlur(passInput, divPass);
     }
 
     confPassInput.onfocus = function(){
         myFocus(confPassInput, divConfPass);
     }
-    confPassInput.onblur = function () {
+    confPassInput.onblur = function (){
         myBlur(confPassInput, divConfPass);
     }
 }

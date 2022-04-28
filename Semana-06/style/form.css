@@ -93,6 +93,17 @@
     background-color: #711919;
     transform: translateY(4px);
 }
-
+.error{
+    padding: 5px;
+    font-size: 10px;
+    color: red;
+    font-weight: bold;
+}
+input[type=text].input-error, input[type=password].input-error, input[type=number].input-error, input[type=date].input-error{
+    border: red 1px solid;
+}
+.error-view{
+    display: none;
+}
 
 

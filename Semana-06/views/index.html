@@ -13,6 +13,7 @@
       <link rel="stylesheet" type="text/css" href="../style/navbar.css">
       <link rel="stylesheet" type="text/css" href="../style/form.css">
       <link rel="stylesheet" type="text/css" href="../style/footer.css">
+      <script src="../javascript/contact.js"></script>
   </head>
   <body>
     <section class="container">
@@ -158,7 +159,8 @@
             <div class="l-name">
               <form action="process.php" method="POST">
                 <label>Last Name</label>
-                <input type="text" name="first-name" placeholder="Rodriguez" id="f-name">
+                <input type="text" name="first-name" placeholder="Rodriguez" id="l-name">
+                <p class="error error-view">Invalid Input</p>
               </form>
             </div>
           </div>
@@ -171,16 +173,10 @@
           <div class="form-group">
             <label>Contact Area</label>
             <select name="contact-area">
-              <option value="buenos-aires">Buenos Aires</option>
-              <option value="santa-fe">Santa Fe</option>
-              <option value="cordoba">Cordoba</option>   
+              <option value="buenos-aires">RRHH</option>
+              <option value="santa-fe">Sistems</option>
+              <option value="cordoba">Commercialization</option>   
             </select>
-          </div>
-          <div class="form-group">
-            <form action="process.php" method="POST">
-              <label>Age</label>
-              <input type="number" name="age" placeholder="30">
-            </form>
           </div>
           <div class="form-group">
             <form action="process.php" method="POST">
