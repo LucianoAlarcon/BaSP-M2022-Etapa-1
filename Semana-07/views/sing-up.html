@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackgenix S.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="../style/header.css">
+    <link rel="stylesheet" type="text/css" href="../style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../style/footer.css">
+    <link rel="stylesheet" type="text/css" href="../style/reset.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/sign-up.css">
+    <script src="../javascript/sign-up.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div class="nav">
+          <nav>
+            <img class="r-logo" src="../img/logo.png" alt="radium-logo">
+            <ul id="list">
+              <li><a href="../views/index.html">Home</a></li>
+              <li><a href="../views/sing-up.html">Sign Up</a></li>
+              <li><a href="../views/login.html">Log In</a></li>
+              <li><a href="../views/index.html #contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <header class="header" id="home">
+          <div class="container-logo">
+            <div class="menu-logo">
+              <img src="../img/hamburguer.png" alt="menu-icon">
+            </div>
+          </div>
+          <p>Trackgenix SA</p>
+        </header>
+      </section>
+      <section class="margin">
+        <div>
+          <h2 class="title-signup">
+            Sign Up
+          </h2>
+        </div>
+        <section class="container">
+          <form class="f-signup" action="process.php" method="POST" id="forms">  
+            <div class="sign-up">
+              <label>Name</label>
+              <input type="text" name="first-name" placeholder="Name" id="name">
+              <p class="error error-view">Invalid Name</p>
+            </div>
+            <div class="sign-up">
+              <label>Last Name</label>
+              <input type="text" name="last-name" placeholder="Last Name" id="l-name">
+              <p class="error error-view">Invalid Last Name</p>
+            </div>
+            <div class="sign-up">
+              <label>DNI</label>
+              <input type="text" name="first-name" placeholder="DNI" id="dni">
+              <p class="error error-view">Dni is invalid</p>
+            </div>
+            <div class="sign-up">
+              <label>Date of Birth</label>
+              <input type="date" name="last-name" placeholder="DD/MM/AA" id="date">
+              <p class="error error-view">Date of birthday is invalid</p>
+            </div>
+            <div class="sign-up">
+              <label>Phone Number</label>
+              <input type="text" name="first-name" placeholder="Phone Number" id="phone">
+              <p class="error error-view">Phone Number is invalid</p>
+            </div>
+            <div class="sign-up">
+              <label>Address</label>
+              <input type="text" name="last-name" placeholder="Address" id="address">
+              <p class="error error-view">Address is invalid</p>
+            </div>
+            <div class="sign-up">
+              <label>Location</label>
+              <input type="text" name="first-name" placeholder="Location" id="locate">
+              <p class="error error-view">Location is invalid</p>
+            </div>
+            <div class="sign-up">
+              <label>Area Code</label>
+              <input type="text" name="last-name" placeholder="Area Code" id="code">
+              <p class="error error-view">Area code is invalid</p>
+            </div>
+            <div class="sign-up">
+              <label>Email</label>
+              <input type="text" name="first-name" placeholder="example@gmail.com" id="email">
+              <p class="error error-view">Invalid Email</p>
+            </div>
+            <div class="sign-up">
+              <label>Password</label>
+              <input type="password" name="last-name" placeholder="***********" id="password">
+              <p class="error error-view">Invalid Password</p>
+            </div>
+            <div class="sign-up">
+              <label>Confirm Password</label>
+              <input type="password" name="first-name" placeholder="***********" id="conf-password">
+              <p class="error error-view">Passwords do not match</p>
+            </div>
+            <div class="buttons">
+              <input type="button" name="submit" value="Sign Up" id="sign-up"> 
+            </div>
+          </form>
+        </section>
+        <section class="container">
+          <footer>
+            <div class="footer">
+              <a href="https://www.facebook.com/radiumrocket">
+                <img class="logo" src="../img/fcb.png" alt="facebook">
+              </a>
+              <a href="https://www.instagram.com/radium.rocket/">
+                <img class="logo" src="../img/insta.png" alt="instagram">
+              </a>
+              <a href="https://www.linkedin.com/company/radium-rocket/">
+                <img class="logo" src="../img/in.png" alt="linkedin">
+              </a>
+              <a href="https://twitter.com/radiumrocket"> 
+                <img class="logo" src="../img/twt.jpg" alt="twitter"> 
+              </a>
+              <a href="https://github.com/radiumrocketapps">
+                <img class="logo" src="../img/git-hub.png" alt="git-hub">
+              </a>
+            </div>
+            <div class="copy">
+              <p>Copyright &copy; 2022 Trackgenix SA. All rights reserved.</p>
+            </div> 
+          </footer>
+        </section>
+      </section>
+</body>
+</html>
