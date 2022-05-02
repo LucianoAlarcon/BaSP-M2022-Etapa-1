@@ -28,6 +28,9 @@ body{
     .first-p{
         font-size: 22px;
     }
+    .sign-up{
+        margin-left: -70px;
+    }
 }
 @media (max-width: 480px){
     .container{
@@ -36,6 +39,10 @@ body{
     .form-group{
         flex-direction: column;
     }
+    .sign-up{
+        margin-left: -70px;
+    }
+
 }
 @media (min-width: 820px){
     .container-logo .menu-logo{

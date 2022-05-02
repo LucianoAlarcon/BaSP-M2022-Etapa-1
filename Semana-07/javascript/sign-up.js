@@ -4,29 +4,30 @@ window.onload = function () {
     getTodayDate();
     var divTxt = document.getElementsByClassName('sign-up');
     divTxtName = divTxt[0];
-    nameInput = divTxtName.children[1];
+    var nameInput = divTxtName.children[1];
     divLName = divTxt[1];
-    lNameInput = divLName.children[1];
+    var lNameInput = divLName.children[1];
     divDni = divTxt[2];
-    dniInput = divDni.children[1];
+    var dniInput = divDni.children[1];
     divDate = divTxt[3];
-    dateInput = divDate.children[1];
+    var dateInput = divDate.children[1];
     divPhone = divTxt[4];
-    phoneInput = divPhone.children[1];
+    var phoneInput = divPhone.children[1];
     divAddress = divTxt[5];
-    addressInput = divAddress.children[1];
+    var addressInput = divAddress.children[1];
     divLocate = divTxt[6];
-    locateInput = divLocate.children[1];
+    var locateInput = divLocate.children[1];
     divCode = divTxt[7];
-    codeInput = divCode.children[1];
+    var codeInput = divCode.children[1];
     divEmail = divTxt[8];
-    emailInput = divEmail.children[1];
+    var emailInput = divEmail.children[1];
     divPass = divTxt[9];
-    passInput = divPass.children[1];
+    var passInput = divPass.children[1];
     divConfPass = divTxt[10];
-    confPassInput = divConfPass.children[1];
+    var confPassInput = divConfPass.children[1];
 
-
+   
+      
     nameInput.onfocus = function(){
         myFocus(nameInput, divTxtName);
     }
@@ -107,7 +108,7 @@ window.onload = function () {
 
 function myFocus(input, divTxtBox){
     hError(divTxtBox);
-}
+ }
  
 function myBlur(input, divTxtBox){
     if (input.value == "") {
@@ -115,51 +116,7 @@ function myBlur(input, divTxtBox){
     }else{
         hError(divTxtBox);
     }
-}
-
-function request(data, url){
-    fetch((url + '?name=' + data.nameValue + '&lastName=' + data.lastName + '&dni=' + data.dni + '&dob=' + data.date
-    + '&phone=' + data.phone + '&address=' + data.address + '&city=' + data.locate + '&zip=' + data.code +
-    '&email=' + data.email + '&password=' + data.password), {
-        method : 'GET',
-        params : {
-            name : data.nameValue,
-            lastName : data.lastName,
-            dni : data.dni,
-            dob : data.birthDate,
-            phone : data.phone,
-            address : data.address,
-            city : data.locate,
-            zip : data.code,
-            email : emailValue,
-            password : passwordValue,
-        }
-    })
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(jsonResponse){
-        console.log(jsonResponse)
-        alert(jsonResponse.msg);
-    })
-    .catch(function(error){
-        console.warn(error);
-    });
-}
-
-function saveLocalStorage(data){
-    localStorage.setItem('Name', data.nameValue);
-    localStorage.setItem('Last Name', data.lastName);
-    localStorage.setItem('Dni', data.dni);
-    localStorage.setItem('Date of Birth', data.birthDate);
-    localStorage.setItem('Phone', data.phone);
-    localStorage.setItem('Address', data.address);
-    localStorage.setItem('City', data.location);
-    localStorage.setItem('Zip', data.code);
-    localStorage.setItem('Email', data.email);
-    localStorage.setItem('Password', data.password);
-    localStorage.setItem('Saved', 'true');
-}
+ }
 
 function signClick() {
     var textBoxes = document.getElementsByClassName('sign-up');
@@ -178,100 +135,131 @@ function signClick() {
         confPassword : document.getElementById('conf-password').value,
     }
     var allIsValid = true;
-    if (!validateName(data.nameValue, textBoxes[0])) {
-        alert('ERROR\nName is invalid')
+    if (!validateNameLastName(data.nameValue, textBoxes[0])) {
+        //alert('ERROR\nName is invalid')
         allIsValid = false;
+        errors.push('\nName');
     }
-    if (!validateLastName(data.lastName, textBoxes[1])) {
-        alert('ERROR\nLast Name is invalid')
+    if (!validateNameLastName(data.lastName, textBoxes[1])) {
+        //alert('ERROR\nLast Name is invalid')
         allIsValid = false;
-    }else{
-        
+        errors.push('\nLast Name');
     }
     if (!validateDNI(data.dni, textBoxes[2])) {
         //alert('ERROR\nDNI is invalid')
         allIsValid = false
+        errors.push('\nDNI');
     }
     if (!isFullAge(data.birthDate, textBoxes[3])) {
         //alert('ERROR\nDate of Birth is invalid. You must have more than 18 years')
         allIsValid = false;
+        errors.push('\nDate of Birth');
     }
     if (!validatePhone(data.phone, textBoxes[4])) {
         //alert('ERROR\nPhone is invalid')
         allIsValid = false;
+        errors.push('\nPhone');
     }
     if (!validateAddress(data.address, textBoxes[5])) {
         //alert('ERROR\nThe address is invalid');
         allIsValid = false;
+        errors.push('\nAddress');
     }
     if (!validateLocation(data.location, textBoxes[6])) {
         //alert('ERROR\nLocation is invalid')
         allIsValid = false;
+        errors.push('\nCity');
     }
     if (!validateCode(data.code, textBoxes[7])) {
         //alert('ERROR\nArea Code is invalid')
         allIsValid = false;
+        errors.push('\nPostal Code');
     }
     if (!validateEmail(data.email, textBoxes[8])) {
         //alert('ERROR\nInvalid Email')
         allIsValid = false;
+        errors.push('\nEmail');
     }
     if (!validatePassword(data.password, textBoxes[9])) {
         //alert('ERROR\nInvalid Password')
         allIsValid = false;
+        errors.push('\nPassword');
     }
     if (!validatePassword2(data.password, data.confPassword, textBoxes[10])) {
         //alert('ERROR\nPassword do not match')
         allIsValid = false;
+        errors.push('\nPassword do not match');
     }
     if (allIsValid) {
-        alert('¡Register succesfully!\nName: ' + data.nameValue + '\nLast Name: ' + data.lastName + 
-        '\nDNI: ' + data.dni + '\nDate of Birth: ' + data.birthDate + '\nPhone Number: ' + data.phone + 
-        '\nAddress: ' + data.address + '\nLocation: ' + data.location + '\nArea Code: ' + data.code + 
-        '\nEmail: ' + data.email + '\nPassword: ' + data.password + '\nConfirm Password: ' + data.confPassword);
+        data.birthDate = convertMDY(data.birthDate);
+        registerRequest(data, 'https://basp-m2022-api-rest-server.herokuapp.com/signup')
     }
 }
 
-function validateName(x, txtBoxes) {
+function registerRequest(data, url){
+    fetch(url + '?name=' + data.nameValue + '&lastName=' + data.lastName + '&dni=' + data.dni
+    + '&dob=' + data.birthDate + '&phone=' + data.phone + '&address=' + data.address
+    + '&city=' + data.locate + '&zip=' + data.code + '&email=' + data.email + '&password=' + data.password,{
+        method : 'GET',
+        params : {
+            name : data.nameValue,
+            lastName : data.lastName,
+            dni : data.dni,
+            dob : data.birthDate,
+            phone : data.phone,
+            address : data.address,
+            city : data.locate,
+            zip : data.code,
+            email : data.email,
+            password : data.password
+        }
+    })
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(jsonResponse){
+            alert(jsonResponse.msg);
+            console.log(jsonResponse)
+            if (jsonResponse.success) {
+                saveInLocalStorage(data);
+            } 
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+}
+
+function saveInLocalStorage(data){
+    localStorage.setItem('Name', data.nameValue);
+    localStorage.setItem('Last Name', data.lastName);
+    localStorage.setItem('DNI', data.dni);
+    localStorage.setItem('Date of Birth', data.birthDate);
+    localStorage.setItem('Phone', data.phone);
+    localStorage.setItem('Address', data.address);
+    localStorage.setItem('City', data.locate);
+    localStorage.setItem('Postal Code', data.code);
+    localStorage.setItem('Email', data.email);
+    localStorage.setItem('Password', data.password);
+    localStorage.setItem('Saved', 'true');
+}
+
+function validateNameLastName(x, txtBoxes) {
     var minLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "l", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var mayusLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "M", "N", "L", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     var isValid = true;
-    
-    for (i = 0; i < x.length; i++) {
-        if (!minLetters.includes(x[i]) && !mayusLetters.includes(x[i])) {
+    var name = x.toLowerCase();
+    for (i = 0; i < name.length; i++) {
+        if (!minLetters.includes(name[i]) && !mayusLetters.includes(name[i])) {
             isValid = false;
         }
     }
-    if (x.length >= 3 && isValid) {
+    if (name.length >= 3 && isValid) {
         hError(txtBoxes);
-        localStorage.setItem('Name: ', x);
         return true;
     } else{
         sError(txtBoxes);
         return false;
     }
-    
-}
-
-function validateLastName(x, txtBoxes) {
-    var minLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "l", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-    var mayusLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "M", "N", "L", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-    var isValid = true;
-    var x = x.toLowerCase();
-    for (i = 0; i < x.length; i++) {
-        if (!minLetters.includes(x[i]) && !mayusLetters.includes(x[i])) {
-            isValid = false;
-        }
-    }
-    if (x.length >= 3 && isValid) {
-        hError(txtBoxes);
-        localStorage.setItem('Last Name: ', x);
-        return true;
-    } else{
-        sError(txtBoxes);
-        return false;
-    }
-    
 }
 
 function validateDNI(dni, txtBoxes){
@@ -284,15 +272,12 @@ function validateDNI(dni, txtBoxes){
     }
     if (dni.length >= 7 && isValid) {
         hError(txtBoxes);
-        localStorage.setItem('DNI: ', dni)
         return true;
     }else {
         sError(txtBoxes);
         return false;
     }
 }
-
-
 
 function getTodayDate(){
     var dateInput = document.getElementById('date');
@@ -315,12 +300,47 @@ function isFullAge(date, txtBoxes){
     var isMajor = new Date(thisMoment - dateInput).getFullYear() - 1970 >= 18;
     if (isMajor) {
         hError(txtBoxes);
-        localStorage.setItem('Date of Birth: ', date)
         return true;
     }else{
         sError(txtBoxes);
         return false;
     }
+}
+function convertMDY(date){
+    var inputDate = new Date(date);
+    var month = inputDate.getMonth();
+    month++;
+    if (month < 10) {
+        month = '0' + month;
+    }
+    month = month.toString();
+    var day = inputDate.getDate();
+    day++;
+    if (day < 10) {
+        day = '0' + day;
+    }
+    day = day.toString();
+    var year = inputDate.getFullYear().toString();
+    date = month + '/' + day + '/' + year;
+    return date;
+}
+
+function convertYMD(date){
+    var inputDate = new Date(date);
+    var month = inputDate.getMonth();
+    month++;
+    if (month < 10) {
+        month = '0' + month;
+    }
+    month = month.toString();
+    var day = inputDate.getDate();
+    if (day < 10) {
+        day = '0' + day;
+    }
+    day = day.toString();
+    var year = inputDate.getFullYear().toString();
+    date = year + '-' + month + '-' + day;
+    return date;
 }
 
 function validatePhone(phone, txtBoxes){
@@ -331,7 +351,7 @@ function validatePhone(phone, txtBoxes){
             isValid = false;
         }
     }
-    if (phone.length === 10 && isValid) {
+    if (phone.length >= 10 && isValid) {
         hError(txtBoxes);   
         return true;     
     }else {
