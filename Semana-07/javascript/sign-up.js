@@ -145,7 +145,7 @@ function registerRequest(data, url){
             dob : data.birthDate,
             phone : data.phone,
             address : data.address,
-            city : data.locate,
+            city : data.location,
             zip : data.code,
             email : data.email,
             password : data.password
@@ -172,11 +172,10 @@ function saveInLocalStorage(data){
     localStorage.setItem('Date of Birth', data.birthDate);
     localStorage.setItem('Phone', data.phone);
     localStorage.setItem('Address', data.address);
-    localStorage.setItem('City', data.locate);
+    localStorage.setItem('City', data.location);
     localStorage.setItem('Postal Code', data.code);
     localStorage.setItem('Email', data.email);
     localStorage.setItem('Password', data.password);
-    localStorage.setItem('Saved', 'true');
 }
 function validateNameLastName(x, txtBoxes) {
     var minLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "l", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
