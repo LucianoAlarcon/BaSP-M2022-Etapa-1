@@ -439,57 +439,46 @@ function signClick() {
     var errors = [];
     var errorAlert = '';
     if (!validateNameLastName(data.nameValue, textBoxes[0])) {
-        //alert('ERROR\nName is invalid')
         allIsValid = false;
         errors.push('\nName');
     }
     if (!validateNameLastName(data.lastName, textBoxes[1])) {
-        //alert('ERROR\nLast Name is invalid')
         allIsValid = false;
         errors.push('\nLast Name');
     }
     if (!validateDNI(data.dni, textBoxes[2])) {
-        //alert('ERROR\nDNI is invalid')
         allIsValid = false
         errors.push('\nDNI');
     }
     if (!isFullAge(data.birthDate, textBoxes[3])) {
-        //alert('ERROR\nDate of Birth is invalid. You must have more than 18 years')
         allIsValid = false;
         errors.push('\nDate of Birth');
     }
     if (!validatePhone(data.phone, textBoxes[4])) {
-        //alert('ERROR\nPhone is invalid')
         allIsValid = false;
         errors.push('\nPhone');
     }
     if (!validateAddress(data.address, textBoxes[5])) {
-        //alert('ERROR\nThe address is invalid');
         allIsValid = false;
         errors.push('\nAddress');
     }
     if (!validateLocation(data.location, textBoxes[6])) {
-        //alert('ERROR\nLocation is invalid')
         allIsValid = false;
         errors.push('\nCity');
     }
-    if (!validateCode(data.code, textBoxes[7])) {
-        //alert('ERROR\nArea Code is invalid')
+    if (!validateCode(data.code, textBoxes[7])) { 
         allIsValid = false;
         errors.push('\nPostal Code');
     }
     if (!validateEmail(data.email, textBoxes[8])) {
-        //alert('ERROR\nInvalid Email')
         allIsValid = false;
         errors.push('\nEmail');
     }
     if (!validatePassword(data.password, textBoxes[9])) {
-        //alert('ERROR\nInvalid Password')
         allIsValid = false;
         errors.push('\nPassword');
     }
     if (!validatePassword2(data.password, data.confPassword, textBoxes[10])) {
-        //alert('ERROR\nPassword do not match')
         allIsValid = false;
         errors.push('\nPassword do not match');
     }
