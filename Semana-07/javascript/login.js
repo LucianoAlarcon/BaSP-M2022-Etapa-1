@@ -96,20 +96,29 @@ function request(emailValue, passwordValue, url){
 function logClick() {
     var email = emailInput.value;
     var password = passwordInput.value;
-    if (validateEmail(email) && validatePassword(password)) {
-        request(email, password, 'https://basp-m2022-api-rest-server.herokuapp.com/login')
-    }
+    var errors = [];
+    var errorAlert = '';
     if (!validateEmail(email)) {
-        alert("Invalid Email")
+        errors.push('\nEmail');
         sError(emailTxtDiv);
     }else{
         hError(emailTxtDiv);
     }
     if (!validatePassword(password)) {
-        alert("Invalid Password")
+        errors.push('\nPassword');
         sError(passwordTxtDiv);
     }else{
         hError(passwordTxtDiv);
+    }
+    if (validateEmail(email) && validatePassword(password)) {
+        request(email, password, 'https://basp-m2022-api-rest-server.herokuapp.com/login')
+    }else{
+        for (var i = 0; i < errors.length; i++) {
+            errorAlert = errorAlert + errors[i] + ' ';
+            
+        }
+        alert('The parameters are invalid: ' + errorAlert);
+        
     }
 }
 
