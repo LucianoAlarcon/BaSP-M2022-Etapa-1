@@ -437,6 +437,8 @@ function signClick() {
         confPassword : document.getElementById('conf-password').value,
     }
     var allIsValid = true;
+    var errors = [];
+    var errorAlert = '';
     if (!validateNameLastName(data.nameValue, textBoxes[0])) {
         //alert('ERROR\nName is invalid')
         allIsValid = false;
@@ -495,5 +497,12 @@ function signClick() {
     if (allIsValid) {
         data.birthDate = convertMDY(data.birthDate);
         registerRequest(data, 'https://basp-m2022-api-rest-server.herokuapp.com/signup')
+    }else{
+        for (var i = 0; i < errors.length; i++) {
+            errorAlert = errorAlert + errors[i] + ' ';
+            
+        }
+        alert('The parameters are invalid: ' + errorAlert);
+        
     }
 }
