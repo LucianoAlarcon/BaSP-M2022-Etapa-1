@@ -6,8 +6,6 @@ window.onload = function () {
     emailInput = emailTxtDiv.children[1];
     passwordInput = passwordTxtDiv.children[1];
     logButton.addEventListener('click', logClick);
-    var form = document.getElementById('form'); 
-
     emailInput.onfocus = function(){
         myFocus(emailInput, emailTxtDiv)
     }
@@ -21,7 +19,6 @@ window.onload = function () {
         myBlur(passwordInput, passwordTxtDiv);
     }
 }
-
 function validateEmail(email) {
     var eRegex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
     if (!eRegex.test(email)) {
@@ -30,7 +27,6 @@ function validateEmail(email) {
         return true; 
     } 
 }
-
 function validatePassword(password) {
     var numbers = ['0','1','2','3','4','5','6','7','8','9'];
     var num = 0;
@@ -56,11 +52,9 @@ function validatePassword(password) {
         return false;
     }
 }
-
 function myFocus(input, divTxtBox){
     hError(divTxtBox);
-}
- 
+} 
 function myBlur(input, divTxtBox){
     if (input.value == "") {
         sError(divTxtBox);
@@ -68,21 +62,18 @@ function myBlur(input, divTxtBox){
         hError(divTxtBox);
     }
 }
-
 function sError(divsTxt) {
     var divChild = divsTxt.children;
     divChild[1].classList.add('error');
     divChild[1].classList.add('input-error');
     divChild[2].classList.remove('error-view');
 }
-
 function hError(divsTxt){
     var divChild = divsTxt.children;
     divChild[1].classList.remove('error');
     divChild[1].classList.remove('input-error');
     divChild[2].classList.add('error-view');
 }
-
 function request(emailValue, passwordValue, url){
     fetch((url + '?email=' + emailValue + '&password=' + passwordValue), {
         method : 'GET',
@@ -102,7 +93,6 @@ function request(emailValue, passwordValue, url){
         console.warn(error);
     });
 }
-
 function logClick() {
     var email = emailInput.value;
     var password = passwordInput.value;
